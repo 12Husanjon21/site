@@ -47,11 +47,11 @@ a {
     font-weight: 600;
 }
 
-nav > a:hover  {
+a:hover  {
     color: var(--gray);
 }
 
-.active {
+a:active{
     color: var(--gray);
 }
 
@@ -120,7 +120,7 @@ button {
     font-family: "Open Sans", sans-serif;
     border: none;
     font-weight: 700;
-    
+    cursor: pointer;
 }
 
 .service p {
@@ -303,6 +303,7 @@ h3 {
 .section_2 {
     margin-top: 40px;
     padding-right: 20px;
+    margin-left: -50px;
 }
 
 .section2 h2 {
@@ -337,6 +338,7 @@ h3 {
     border: none;
     margin-top: 5px;
     margin-top: 30px;
+    cursor: pointer;
 }
 
 .section_img1 img {
@@ -375,7 +377,20 @@ h3 {
     .design button {
         margin-bottom: 40px;
     }
-}
+    .section_cards {
+        display: block;
+        gap: 40px;
+    }
+    .section2 {
+        display: block;
+        row-gap: 40px;
+    }
+    .section_2 {
+        margin-left: 30px;
+    }
+    .section_2 button {
+        margin-bottom: 40px;
+    }
 
 @media screen and (max-width: 600px) {
     header {
@@ -387,6 +402,9 @@ h3 {
     h1 {
         font-size: 3rem;
         line-height: 46px;
+    }
+    p {
+        font-size: 2rem;
     }
 
 }
